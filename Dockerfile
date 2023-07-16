@@ -14,8 +14,8 @@ RUN dpkg --add-architecture i386 && locale-gen en_US.UTF-8 && \
 WORKDIR /script
 
 # add scripts
-ADD run.sh /script
-ADD create_enviroment.py /script
+ADD script/run.sh /script
+ADD script/create_enviroment.py /script
 
 # startup command
 ENTRYPOINT ["/bin/bash"]
